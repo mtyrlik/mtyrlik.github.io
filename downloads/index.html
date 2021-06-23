@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130244066-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130244066-2');
+		</script>
+
+		<title>Michal Tyrlik - Downloads</title>
+	</head>
+
+	<body>
+		<h1>Downloads</h1>
+		Back to <a href="https://terpconnect.umd.edu/~mtyrlik">homepage</a>.
+		
+
+			<p id="data_list"><tr><td>No data to display...</td></tr></p>
+			<script type="text/javascript">
+
+				var list = [
+					//{link:"url",desc:"description"} and separate individual entrie swith "," character
+					{link:"mtbiochem_1.5.3.zip",name:"mtbiochem",version:"1.5.3",desc:"R Package for Biochemistry calculations and plotting. Includes Michaelis-Menten kinetics and mass spec analysis tools. [requires mtplot 1.1.0+ | <a href=https://terpconnect.umd.edu/~mtyrlik/downloads/mtbiochem>Guide</a>]"},
+					{link:"mtplot_1.1.2.zip",name:"mtplot",version:"1.1.2",desc:"R Package with custom themes and useful plotting functions. <a href=https://terpconnect.umd.edu/~mtyrlik/downloads/mtplot>[Guide]</a>"}
+				];
+
+			
+				var emb = "<table border=1><tr><th>Name</th><th>Version</th><th>Description</th></tr>";
+				for (var i = 0; i < list.length; i++) {
+				
+				emb += "<tr><td><a href=\""+list[i]["link"]+"\" download>"+list[i]["name"]+"</a></td><td>"+list[i]["version"]+"</td><td>"+list[i]["desc"]+"</td></tr>";
+				}
+
+				emb += "</table>";
+				document.getElementById("data_list").innerHTML = emb;
+
+				if(list.length==0) {
+					document.getElementById("data_list").innerHTML="No data to display";
+				}
+			</script>
+
+<div class="footer">
+<p><a href="https://terpconnect.umd.edu/~mtyrlik">return</a></p>
+</div>
+
+	</body>
+</html>
+

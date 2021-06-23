@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130244066-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130244066-2');
+		</script>
+
+		<title>Michal Tyrlik - mtbiochem</title>
+	</head>
+
+	<body>
+		<h1>mtbiochem package user guide</h1>
+		Back to <a href="https://terpconnect.umd.edu/~mtyrlik/downloads">downloads</a>.
+
+
+		<h2>Changelog<h2>
+			<h3>Version 1.5.3</h3>
+			Added tools for automated analysis of mass spectra.
+
+
+			<h3>Previous versions</h3>
+			Not documented
+
+		<h2>Features</h2>
+		documentation and examples for all available functions can be obtained by running "?function" command in an R session with the package loaded.
+
+			<h3>Enzyme Kinetics</h3>
+			Analysis of enzyme kinetics using the Michaelis-Menten model. Implemented in function "michealis_menten".
+
+			
+			<h3>Bradford Assay</h3>
+			Automated processing of bradford data by individually fitting each dilution to a local standard curve segment for increased accuracy. Implemented in function "bradford". Standards are included in the package.
+
+			<h3>Mass Spec Analysis</h3>
+			Batch analysis of mass spectrometry data. Includes loading (from MZXML format), baseline subtraction, integration boundary detection, integration, data aggregation, and quality control tools in the workflow. Implemented in the function "msanalyze".
+			<p><img src="msanalyze_demo.png" style="width:30%;height:10%"></p>
+			<a></a>
+
+			<h3>Plane Chromatography Diagram Tool</h3>
+			Tool for creation of nice diagrams to represent plane or gel chromatography experiments using the ggplot2 package. Implemented in the function "tlcvis".
+			<p><img src="tlcvis_demo.png" style="width:30%;"></p>
+			
+	</body>
+</html>
+
